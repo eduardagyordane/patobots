@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PATO BOTS | OFICINAS</title>
+    <link rel="stylesheet" type="text/css" href="oficinas.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="icon" type="image/png" href=".img/1733869376263-7b6adf72-eed2-43d0-8269-31ed45d26e2f_1-removebg-preview copy.png">
+
+</head>
+
+<body>
+    <main>
+        <header>
+            <nav>
+                <a class="logo"><img src=".img/1733869376263-7b6adf72-eed2-43d0-8269-31ed45d26e2f_1-removebg-preview copy.png" alt=""></a>
+                <ul class="nav-list">
+                    <li><a href="./sobrenos.html">Sobre Nós</a></li>
+                    <li><a href="./comoreaproveitar.html">Como Reaproveitar</a></li>
+                    <li><a href="./querodoar.html">Quero Doar</a></li>
+                    <li><a href="./oficinas.html">Oficinas</a></li>
+                    <li><a href=""></a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="itens">
+            <div id="card-enxerto" class="card">
+                <img src=".img/Imagem do WhatsApp de 2024-12-11 à(s) 21.32.45_3a170c21.jpg">
+                <p>Parte do nosso trabalho é a execução de receitas a partir de alimentos que foram descartados por estarem fora dos padrões de comercialização, mas totalmente apropriados para consumo.</p>
+                <div class="line"></div>
+            </div>
+
+            <div id="card-maracuja" class="card">
+                <img src=".img/Imagem do WhatsApp de 2024-12-11 à(s) 21.32.45_692440b3.jpg">
+                <p>Nós acreditamos que podemos contribuir para a erradicação da fome em nossa comunidade, com isso pretendemos atingir um número expressivo de instituições, acreditamos fortemente em ações socioeducativas, o futuro está em nossas mãos.</p>
+                <div class="line"></div>
+            </div>
+
+            <div id="card-hortalicas" class="card">
+                <img src="img/oficina3.jpg">
+                <p>A equipe Patobots, com o projeto De Sobras a Obras, busca combater a insegurança alimentar, promovendo educação e conscientização entre crianças para transformar sobras alimentares em recursos úteis. Através de oficinas práticas, incentivam a sustentabilidade e a redução do desperdício, acreditando na construção de um futuro mais justo e sustentável.</p>
+                <div class="line"></div>
+            </div>
+
+            <div id="card-materiaprima" class="card">
+                <img src="img/oficina.jpg">
+                <p>Acreditamos que a informação responsável é uma poderosa aliada na luta contra a fome. Nesta etapa do projeto Patobots na comunidade, tivemos a oportunidade de apresentar as receitas elaboradas em nossas oficinas. Além de explorar formas de aproveitar os alimentos de maneira integral, preparamos as receitas e levamos nosso trabalho diretamente às pessoas.</p>
+        </div>
+
+    <footer>
+        <div class="boxs">
+            <h2>Redes Sociais</h2>
+            <ul>
+                <div class="sociais">
+                    <div class="social">
+                        <a target="_blank"
+                            href="https://www.instagram.com/pato.bots?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i
+                                class="fa fa-instagram" aria-hidden="true"></i> Instagram</a>
+                    </div>
+                </div>
+            </ul>
+        </div>
+
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        function showModal(productType) {
+            document.getElementById('modal-title').innerText = `Cadastro de ${productType}`;
+            document.getElementById('modal').style.display = 'block';
+        }
+
+        function hideModal(event) {
+            if (event.target === document.getElementById('modal') || event.target.className === 'close') {
+                document.getElementById('modal').style.display = 'none';
+            }
+        }
+
+        // Adicionar funcionalidade para o formulário, se necessário
+        document.getElementById('modal-form').addEventListener('submit', function (event) {
+            event.preventDefault();
+            // Aqui você pode adicionar a lógica para salvar os dados
+            hideModal(event);
+        });
+    </script>
+</body>
+
+</html>
